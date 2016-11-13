@@ -1,0 +1,130 @@
+body {
+    background: #141414;
+    color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+.profile, .resume {
+	width: 700px;
+    margin: 0 auto;
+    background: #282828;
+    margin-top: 0;
+    border-top: 1px solid transparent;
+    padding: 20px;
+}
+
+/*Profile Style*/
+
+.profile {
+    border-bottom: 1px solid #555;
+    border-radius: 3px 3px 0 0;
+}
+
+.profile h1 {
+	text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+}
+
+.profile h2, .resume h2{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #f9b03d;
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-left: -30px;
+}
+
+
+
+.profile img {
+    display: inline-block;
+	width: 91px;
+    height: 150px;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.profile-name {
+	display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+}
+
+.profile b {
+	font-size: 30px;
+    text-transform: uppercase;
+}
+
+.profile .profile-status{
+	color: #457c9b;
+    margin: 0;
+}
+
+.profile ul{
+	display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 50px;
+    font-size: 20px;
+    color: grey;
+}
+.profile ul li span{
+	font-weight: 700;
+    color: #fff;
+    padding-right: 10px;
+}
+
+/*Resume Style*/
+
+.resume {
+	border-radius: 0 0 3px 3px;
+    position: relative;
+}
+
+.resume h2{
+	background: #6ba143;
+}
+
+.resume h3{
+	background: #337da0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.resume ul li b{
+	font-size: 20px; 
+}
+
+.education-direction, .employment-direction {
+	display: block;
+    font-size: 15px;
+    color: grey;
+}
+
+.resume-year {
+	float: right;
+    margin-right: 30px;
+    vertical-align: top;
+    color: grey;
+}
+
+.back-to-top {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: -70px;
+    width: 40px;
+    height: 40px;
+    background: url(back-to-top-sprite.png) no-repeat;
+}
+
+.back-to-top:hover {
+    background-position: 0 -40px;
+}
