@@ -30,17 +30,27 @@ body {
 .profile h2, .resume h2{
 	display: inline-block;
     vertical-align: top;
+    position: relative;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     background: #f9b03d;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 40px;
     border-radius: 3px;
     margin-bottom: 30px;
     margin-left: -30px;
 }
 
-
+.profile h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: url(img/profile.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    bottom: 13px;
+}
 
 .profile img {
     display: inline-block;
@@ -72,13 +82,14 @@ body {
     padding: 0;
     list-style: none;
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 15px;
     color: grey;
 }
 .profile ul li span{
 	font-weight: 700;
     color: #fff;
     padding-right: 10px;
+    font-size: 20px;
 }
 
 /*Resume Style*/
@@ -92,10 +103,40 @@ body {
 	background: #6ba143;
 }
 
+.resume h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: url(img/list.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    bottom: 13px;
+}
+
 .resume h3{
 	background: #337da0;
     padding: 5px;
     border-radius: 3px;
+}
+
+.resume ul {
+    list-style: none;
+}
+
+.resume ul li {
+    position: relative;
+}
+
+.resume ul li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url(img/list-style.png) no-repeat;
+    left: -30px;
+    top: 5px;
 }
 
 .resume ul li b{
@@ -116,14 +157,16 @@ body {
 }
 
 .back-to-top {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: -70px;
+    position: fixed;
+    top: 10px;
+    padding: 0;
+    right: 50%;  
+    margin-right: 420px;
     width: 40px;
     height: 40px;
-    background: url(back-to-top-sprite.png) no-repeat;
+    background: url(../img/back-to-top-sprite.png) no-repeat;
 }
+
 
 .back-to-top:hover {
     background-position: 0 -40px;
